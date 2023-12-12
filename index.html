@@ -9,21 +9,53 @@
 </head>
 <body>
    
-   <header class="flex container">
-      <div>Karl Nordgaard</div>
-      <nav>
-         <ul>
-            <li><a>Projects</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
-         </ul>
-      </nav>
-      <i class="fa-solid fa-bars"></i>
+   <header>
+      <div class="container flex header-container align-items__center">
+         <div class="header-logo">Karl Nordgaard</div>
+         <nav>
+            <ul class="nav-list">
+               <li><a>Projects</a></li>
+               <li><a>About</a></li>
+               <li><a class="nav-contact">Contact</a></li>
+            </ul>
+         </nav>
+         <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </div>
    </header>
    
-   <main></main>
+   <main>
+
+      <div class="hero-wrapper">
+         <section class="container flex column hero-section">
+            <div class="flex column hero-heading">
+               <h1>Hey, I'm Karl Nordgaard. A front-end development student from Oslo, Norway</h1>
+               <div class="vertical-line hero-line"></div>
+            </div>
+            <div class="hero-image">
+               <div class="image-background"></div>
+               <img src="images/hero-image.png" alt="karl petter nordgaard">
+            </div>
+         </section>
+      </div>
+      
+      <div class="projects-wrapper">
+         <section class="container flex column projects-section">
+            <div class="projects-section__heading">
+               <h2>My Projects</h2>
+               <div class="vertical-line"></div>
+               <p>Projects that I have made throughout my front-end studies at Noroff</p>
+            </div>
+            <div class="projects-section__cards">
+               
+            </div>
+         </section>
+      </div>
+
+   </main>
    
    
    <footer></footer>
+
+   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
    --clr-primary: #242424;
    --clr-secondary: #E0CA3C;
+
+   --secondary-hover: #E7DA5D;
    
    --clr-text: #EEEEEE;
    
@@ -11,4 +15,13 @@
    --clr-inputs: #EEEEEE;
 
    --clr-menu: #424242;
+
+   --ff-heading: 'Montserrat', sans-serif;
+   --ff-paragraph: 'Poppins', sans-serif;
+   --ff-nav-items: 'Poppins', sans-serif;
+
+   --fw-regular: 400;
+   --fw-medium: 500;
+   --fw-sbold: 600;
+   --fw-bold: 700;
 }
