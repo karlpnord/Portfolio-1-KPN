@@ -61,6 +61,18 @@ html {
    margin-top: 5px;
 }
 
+.section-header {
+   max-width: 400px;
+   text-align: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.section-header .vertical-line {
+   width: 100%;
+   max-width: 300px;
+}
+
 .project-card .vertical-line {
    border: 1px solid var(--clr-text);
    margin-top: 10px;
@@ -197,22 +209,10 @@ header i:hover {
    padding-block: 4em;
 }
 
-.projects-section__heading {
-   max-width: 400px;
-   text-align: center;
-   align-items: center;
-   margin: 0 auto;
-}
-
 .projects-section__heading p {
    margin-top: 1em;
    font-size: 0.875em;
    font-weight: var(--fw-medium);
-}
-
-.projects-section__heading .vertical-line {
-   width: 100%;
-   max-width: 300px;
 }
 
 /** Projects section - CARDS **/
@@ -285,6 +285,55 @@ header i:hover {
 
 .project-card:hover {
    transform: scale(1.025);
+}
+
+/** About Section **/
+.about-wrapper {
+   background-color: var(--clr-primary);
+   background-image: url(/images/about-background.png);
+}
+
+.about-section {
+   padding-block: 4em;
+   gap: 2em;
+}
+
+.about-info p {
+   margin-bottom: 8px;
+   font-size: 14px;
+}
+
+.about-info.desktop {
+   display: none;
+}
+
+.skills {
+   margin-top: 3em;
+   gap: 1.25em;
+}
+
+.skills h3 {
+   font-family: var(--ff-heading);
+   font-weight: var(--fw-ebold);
+   font-size: 2em;
+}
+
+.skills h4 {
+   font-family: var(--ff-nav-items);
+   font-weight: var(--fw-medium);
+   font-size: 1.225em;
+}
+
+.skills ul {
+   gap: 0.75em;
+}
+
+.skills li {
+   gap: 0.75em;
+}
+
+.skills i {
+   font-size: 2em;
 }
 
 /** Responsive Design **/
@@ -387,6 +436,57 @@ header i:hover {
    .projects-section {
       padding-block: 6em;
    }
+
+   /** About Section **/
+   .about-section {
+      padding-block: 6em;
+   }
+
+   .about-info.mobile {
+      display: none;
+   }
+
+   .about-info.desktop {
+      display: flex;
+      flex-direction: column;
+      gap: 1.125em;
+      font-size: 18px;
+   }
+
+   .about-section__content {
+      display: grid;
+      grid-template-columns: 20% auto 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 3em;
+   }
+
+   .skills {
+      margin-top: 0;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+   }
+
+   .about-section__content .vertical-line {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+   }
+
+   .about-info.desktop {
+      grid-column: 3 / 4;
+   }
+
+   .skills h3 {
+      font-size: 2.25em;
+   }
+
+   .skills h4 {
+      font-size: 1.5em;
+   }
+
+   .skills i {
+      font-size: 2.25 em;
+   }
 }
 
 @media (min-width: 1280px) {
@@ -404,6 +504,11 @@ header i:hover {
    /** Project section **/
    .project-card__icons i {
       font-size: 2.125em;
+   }
+
+   /** About Section **/
+   .about-info.desktop p {
+      font-size: 16px;
    }
 }
 
