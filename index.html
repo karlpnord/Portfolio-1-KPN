@@ -6,6 +6,7 @@
    <title>Portfolio - Karl Nordgaard</title>
    <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
    <link href="css/style.css" rel="stylesheet">
+   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
    
@@ -28,7 +29,7 @@
       <div class="hero-wrapper">
          <section class="container flex column hero-section">
             <div class="flex column hero-heading">
-               <h1>Hey, I'm Karl Nordgaard. A front-end development student from Oslo, Norway</h1>
+               <h1 class="hero-title">Hey, I'm Karl Nordgaard. A front-end development student from Oslo, Norway</h1>
                <div class="vertical-line hero-line"></div>
             </div>
             <div class="hero-image">
@@ -117,15 +118,15 @@
                   <h3>My Skills</h3>
                   <ul class="flex column">
                      <li class="flex align-items__center">
-                        <i class="fa-brands fa-html5" style="color: #f16529;"></i>
+                        <i class="fa-brands fa-html5 fa-fw" style="color: #f16529;"></i>
                         <h4>HTML</h4>
                      </li>
                      <li class="flex align-items__center">
-                        <i class="fa-brands fa-css3-alt" style="color: #33aadd;"></i>
+                        <i class="fa-brands fa-css3-alt fa-fw" style="color: #33aadd;"></i>
                         <h4>CSS</h4>
                      </li>
                      <li class="flex align-items__center">
-                        <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                        <i class="fa-brands fa-js fa-fw" style="color: #f7df1e;"></i>
                         <h4>JS</h4>
                      </li>
                   </ul>
@@ -141,13 +142,59 @@
                <div class="vertical-line"></div>
                <p>Get in touch with me through social media or through email!</p>
             </div>
+            <div class="contact-section__content flex column">
+               <div class="contact-content__icons flex column">
+                  <a href="https://github.com/karlpnord" class="contact-icons flex align-items__center">
+                     <i class="fa-brands fa-github fa-fw"></i>
+                     <h3>GitHub</h3>
+                  </a>
+                  <a href="https://www.linkedin.com/in/karl-petter-n-560624137/" class="contact-icons flex align-items__center">
+                     <i class="fa-brands fa-linkedin-in fa-fw"></i>
+                     <h3>Linked In</h3>
+                  </a>
+                  <a href="#" class="contact-icons flex align-items__center">
+                     <i class="fa-brands fa-facebook fa-fw"></i>
+                     <h3>Facebook</h3>
+                  </a>
+                  <a href="#" class="contact-icons flex align-items__center">
+                     <i class="fa-brands fa-instagram fa-fw"></i>
+                     <h3>Instagram</h3>
+                  </a>
+               </div>
+               <div class="vertical-line"></div>
+               <form class="contact-form flex column">
+                  <div class="form-item flex column">
+                     <label for="name">Name</label>
+                     <input type="text" id="name" name="name">
+                  </div>
+                  <div class="form-item flex column">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email">
+                  </div>
+                  <div class="form-item flex column">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message"></textarea>
+                  </div>
+                  <button class="cta cta-secondary cta-contact">Send email</button>
+               </form>
+            </div>
          </section>
       </div>
 
    </main>
    
-   
-   <footer></footer>
+   <footer>
+      <div class="container footer-container flex column align-items__center">
+         <nav>
+            <ul class="nav-list">
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+         </nav>
+         <h2 class="copyright">&#169;2023 Karl Nordgaard</h2>
+      </div>
+   </footer>
 
    <script src="js/script.js"></script>
 </body>
