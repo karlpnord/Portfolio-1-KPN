@@ -113,6 +113,23 @@ html {
    box-shadow: 0px 0px 10px 0px rgb(255, 250, 202);
 }
 
+/** Form validation **/
+.form-error {
+   color: red;
+   font-family: var(--ff-input);
+   font-weight: var(--fw-sbold);
+}
+
+.form-success {
+   background: green;
+   color: var(--clr-text);
+}
+
+.form-success:hover {
+   background: green;
+   box-shadow: none;
+}
+
 /** Header and Navigation **/
 header {
    background-color: var(--clr-primary);
